@@ -8,51 +8,51 @@ function RadioButtonGroup(props) {
       <label>
         <input
           type="radio"
-          value="option1"
-          checked={props.selectedOption === "option1"}
+          value="Gostaria Muito"
+          checked={props.selectedOption === "Gostaria Muito"}
           onChange={props.handleChange}
         />
-        Option 1
+        Gostaria Muito
       </label>
       <br />
       <label>
         <input
           type="radio"
-          value="option2"
-          checked={props.selectedOption === "option2"}
+          value="Gostaria Parcialmente"
+          checked={props.selectedOption === "Gostaria Parcialmente"}
           onChange={props.handleChange}
         />
-        Option 2
+        Gostaria Parcialmente
       </label>
       <br />
       <label>
         <input
           type="radio"
-          value="option3"
-          checked={props.selectedOption === "option3"}
+          value="Indiferente"
+          checked={props.selectedOption === "Indiferente"}
           onChange={props.handleChange}
         />
-        Option 3
+        Indiferente
       </label>
       <br />
       <label>
         <input
           type="radio"
-          value="option4"
-          checked={props.selectedOption === "option4"}
+          value="Não Gostaria"
+          checked={props.selectedOption === "Não Gostaria"}
           onChange={props.handleChange}
         />
-        Option 4
+        Não Gostaria
       </label>
       <br />
       <label>
         <input
           type="radio"
-          value="option5"
-          checked={props.selectedOption === "option5"}
+          value="Detestaria"
+          checked={props.selectedOption === "Detestaria"}
           onChange={props.handleChange}
         />
-        Option 5
+        Detestaria
       </label>
       <br />
     </div>
