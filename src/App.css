@@ -28,6 +28,48 @@
   color: #61dafb;
 }
 
+/* ChatGPT*/
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+}
+
+/* Optional: Style for the label text */
+.radio-container label {
+  font-size: 20px;
+  color: #282c34;
+  text-align: center;
+}
+
+.radio-itens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.btn {
+  margin-top: 20px; /* Example margin */
+  padding: 10px 20px; /* Example padding */
+  font-size: 18px; /* Example font size */
+  background-color: #3c3e3f; /* Example background color */
+  color: #fff; /* Example text color */
+  border: none; /* Remove border */
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+.btn:hover {
+  background-color: #234870; /* Example background color on hover */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

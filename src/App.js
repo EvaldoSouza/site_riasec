@@ -4,57 +4,61 @@ import "./App.css";
 
 function RadioButtonGroup(props) {
   return (
-    <div>
-      <label>
-        <input
-          type="radio"
-          value="Gostaria Muito"
-          checked={props.selectedOption === "Gostaria Muito"}
-          onChange={props.handleChange}
-        />
-        Gostaria Muito
-      </label>
-      <br />
-      <label>
-        <input
-          type="radio"
-          value="Gostaria Parcialmente"
-          checked={props.selectedOption === "Gostaria Parcialmente"}
-          onChange={props.handleChange}
-        />
-        Gostaria Parcialmente
-      </label>
-      <br />
-      <label>
-        <input
-          type="radio"
-          value="Indiferente"
-          checked={props.selectedOption === "Indiferente"}
-          onChange={props.handleChange}
-        />
-        Indiferente
-      </label>
-      <br />
-      <label>
-        <input
-          type="radio"
-          value="Não Gostaria"
-          checked={props.selectedOption === "Não Gostaria"}
-          onChange={props.handleChange}
-        />
-        Não Gostaria
-      </label>
-      <br />
-      <label>
-        <input
-          type="radio"
-          value="Detestaria"
-          checked={props.selectedOption === "Detestaria"}
-          onChange={props.handleChange}
-        />
-        Detestaria
-      </label>
-      <br />
+    <div className="radio-container">
+      <div className="radio-itens">
+        <form action="">
+          <label>
+            <input
+              type="radio"
+              value="Gostaria Muito"
+              checked={props.selectedOption === "Gostaria Muito"}
+              onChange={props.handleChange}
+            />
+            Gostaria Muito
+          </label>
+          <br />
+          <label>
+            <input
+              type="radio"
+              value="Gostaria Parcialmente"
+              checked={props.selectedOption === "Gostaria Parcialmente"}
+              onChange={props.handleChange}
+            />
+            Gostaria Parcialmente
+          </label>
+          <br />
+          <label>
+            <input
+              type="radio"
+              value="Indiferente"
+              checked={props.selectedOption === "Indiferente"}
+              onChange={props.handleChange}
+            />
+            Indiferente
+          </label>
+          <br />
+          <label>
+            <input
+              type="radio"
+              value="Não Gostaria"
+              checked={props.selectedOption === "Não Gostaria"}
+              onChange={props.handleChange}
+            />
+            Não Gostaria
+          </label>
+          <br />
+          <label>
+            <input
+              type="radio"
+              value="Detestaria"
+              checked={props.selectedOption === "Detestaria"}
+              onChange={props.handleChange}
+            />
+            Detestaria
+          </label>
+          <br />
+        </form>
+      </div>
     </div>
   );
 }
@@ -110,10 +114,14 @@ function App() {
       />
       <br />
       {pageTitleIndex === questions.perguntas.length - 1 && (
-        <button onClick={handleDownloadAnswers}>Download</button>
+        <button className="btn" onClick={handleDownloadAnswers}>
+          Download
+        </button>
       )}
       {pageTitleIndex !== questions.perguntas.length - 1 && (
-        <button onClick={buttonNext}>Next</button>
+        <button className="btn" onClick={buttonNext}>
+          Next
+        </button>
       )}
     </div>
   );
